@@ -37,7 +37,7 @@ if st.sidebar.button("🚀 開始分析"):
     else:
         # 設定 Google Gemini
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # 組合給 AI 的指令 (Prompt)
         prompt = f"""
