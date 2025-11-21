@@ -37,8 +37,7 @@ if st.sidebar.button("🚀 開始分析"):
     else:
         # 設定 Google Gemini
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
-
+        model =genai.GenerativeModel('gemini-pro')
         # 組合給 AI 的指令 (Prompt)
         prompt = f"""
         你現在是【易恩室內裝修設計有限公司】的資深設計總監。
